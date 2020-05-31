@@ -211,64 +211,64 @@ VALUES(10, 4);
 -- ///////////////////////////////////////////////////////////////////////////
 -- table realiza
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(1, 8, '08A01', '2020-05-23 12:26:33');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(1, 8, '08A01', '2020-01-22 12:48:33', '2020-02-01 15:56:50');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(2, 7, '07A02', '2020-05-21 12:56:47');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(2, 7, '07A02', '2020-02-26 08:49:15', '2020-03-04 12:46:16');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(3, 6, '06A03', '2020-03-30 10:51:41');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(3, 6, '06A03', '2020-02-25 17:04:20', '2020-03-01 09:56:16');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(4, 5, '05A04', '2020-03-18 12:22:25');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(4, 5, '05A04', '2020-01-28 12:19:07', '2020-02-07 10:37:55');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(5, 4, '04A05', '2020-03-21 15:26:21');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(5, 4, '04A05', '2020-04-08 12:24:01', '2020-04-11 10:13:29');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(6, 3, '03A06', '2020-05-16 17:26:55');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(6, 3, '03A06', '2020-01-21 14:56:37', '2020-01-23 12:06:20');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(7, 2, '02A07', '2020-05-30 14:58:29');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(7, 2, '02A07', '2020-05-06 16:59:54', '2020-05-13 08:47:11');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(8, 1, '01A08', '2020-04-23 13:15:15');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(8, 1, '01A08', '2020-02-12 11:33:03', '2020-02-19 16:01:06');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(9, 3, '03A09', '2020-04-28 12:59:12');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(9, 6, '06A09', '2020-05-05 16:40:08', '2020-05-07 13:24:05');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(10, 4, '04A10', '2020-04-15 11:55:57');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(10, 5, '05A10', '2020-02-14 08:30:10', '2020-02-20 13:14:25');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(1, 6, '06A11', '2020-05-19 13:46:34');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(5, 6, '06A11', '2020-05-12 16:01:12', '2020-05-14 14:10:10');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(2, 2, '02A12', '2020-04-10 15:11:15');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(7, 6, '06A12', '2020-02-14 16:53:38', '2020-02-16 16:45:10');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(4, 6, '06A13', '2020-03-27 16:45:20');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(4, 6, '06A13', '2020-02-28 17:50:51', '2020-03-05 15:13:27');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(9, 5, '05A14', '2020-05-10 10:10:22');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(2, 6, '06A14', '2020-03-21 09:55:04', '2020-03-28 15:17:25');
 
 INSERT INTO public.realiza
-    (id_paciente, id_exame, codigo_amostra, data_de_realizacao)
-VALUES(2, 1, '01A15', '2020-05-28 10:41:37');
+    (id_paciente, id_exame, codigo_amostra, data_de_solicitacao, data_de_realizacao)
+VALUES(10, 5, '05A15', '2020-04-06 09:46:56', '2020-04-12 11:56:01');
 
 -- ///////////////////////////////////////////////////////////////////////////
 -- table tutelamento
@@ -532,3 +532,49 @@ VALUES(1, 5);
 INSERT INTO public.pertence
     (id_servico, id_perfil)
 VALUES(1, 6);
+
+-- ///////////////////////////////////////////////////////////////////////////
+-- table requisita
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(10 , 4, '2020-04-27 15:16:42');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(2 , 2, '2020-05-13 16:41:54');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(5 , 1, '2020-04-24 11:25:37');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(3 , 3, '2020-03-17 16:35:44');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(4 , 1, '2020-03-28 12:23:56');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(7 , 4, '2020-04-23 15:25:50');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(8 , 3, '2020-05-21 15:28:22');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(1 , 2, '2020-04-13 14:20:25');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(9 , 1, '2020-04-19 10:53:10');
+
+INSERT INTO public.requisita
+    (id_usuario, id_servico, data_de_requisicao)
+VALUES(6 , 1, '2020-04-22 14:35:56');
+
+
+

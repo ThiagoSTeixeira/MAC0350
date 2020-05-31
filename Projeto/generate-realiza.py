@@ -28,7 +28,8 @@ codigo_amostra = []
 for i in range(15):
     codigo_amostra.append(f'{id_exame[i].zfill(2)}A{str(i+1).zfill(2)}')
 
-for i in range(15):
-    print(insert)
-    print(tuples)
-    print(f'VALUES({id_paciente[i]}, {id_exame[i]}, \'{codigo_amostra[i]}\', \'{timestamp()}\');\n')
+for i in range(1):
+    #print(insert)
+    #print(tuples)
+    #print(f'VALUES({id_paciente[i]}, {id_exame[i]}, \'{codigo_amostra[i]}\', \'{timestamp()}\');\n')
+    print(f'\'{timestamp()}\'\n')

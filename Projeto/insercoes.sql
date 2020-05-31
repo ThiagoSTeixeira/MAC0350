@@ -38,7 +38,7 @@ VALUES(9, '86011419275', 'Ryan Rodrigues', 'Rua Junqueirópolis 1033', '1946-08-
 
 INSERT INTO public.paciente
     (id_paciente, cpf, nome, endereco, nascimento)
-VALUES(10, '43356416723', 'Nicolash Gomes', 'Avenida Farias 249', '1974-10-06');
+VALUES(10, '43356416723', 'Nicole Gomes', 'Avenida Farias 249', '1974-10-06');
 
 --//////////////////////////////////////////////////////////////////////////////////////////////////////
 -- table perfil
@@ -104,10 +104,74 @@ VALUES(8, 'anticorpos', 'H1N1');
 -- table amostra
 INSERT INTO public.amostra
     (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
-VALUES(6, 1, 2550639, 'sangue', '');
+VALUES(1, 8, '08A01', 'raspado de nasofaringe', 'secreção nasofaringe');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(2, 7, '07A02', 'raspagem do colo do útero', 'células uterinas');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(3, 6, '06A03', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(4, 5, '05A04', 'raspagem de nasofaringe', 'secreção nasofaringe');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(5, 4, '04A05', 'raspagem do colo do útero', 'células uterinas');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(6, 3, '06A03', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(7, 2, '02A07', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(8, 1, '01A08', 'raspagem de nasofaringe', 'secreção nasofaringe');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(9, 3, '03A09', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(10, 4, '10A04', 'raspagem do colo do útero', 'células uterínas');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(1, 6, '06A01', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(2, 2, '02A02', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(4, 6, '06A04', 'coleta de sangue', 'sangue');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(9, 5, '05A09', 'raspagem de nasofaringe', 'secreção nasofaringe');
+
+INSERT INTO public.amostra
+    (id_paciente, id_exame, codigo_amostra, metodo_de_coleta, material)
+VALUES(2, 1, '01A02', 'raspagem de nasofaringe', 'secreção nasofaringe');
 
 -- ///////////////////////////////////////////////////////////////////////////
 -- table possui
+INSERT INTO public.possui
+    (id_usuario, id_perfil)
+VALUES(1, 3);
+
+INSERT INTO public.possui
+    (id_usuario, id_perfil)
+VALUES(1, 6);
+
 INSERT INTO public.possui
     (id_usuario, id_perfil)
 VALUES(2, 1);
@@ -131,6 +195,18 @@ VALUES(6, 1);
 INSERT INTO public.possui
     (id_usuario, id_perfil)
 VALUES(7, 5);
+
+INSERT INTO public.possui
+    (id_usuario, id_perfil)
+VALUES(8, 6);
+
+INSERT INTO public.possui
+    (id_usuario, id_perfil)
+VALUES(9, 3);
+
+INSERT INTO public.possui
+    (id_usuario, id_perfil)
+VALUES(10, 4);
 
 -- ///////////////////////////////////////////////////////////////////////////
 -- table realiza
@@ -253,3 +329,206 @@ VALUES(9, '67538866438', 'Rene Bishop', 'Biologia', 'Unicamp', '1936-06-26', 're
 INSERT INTO public.usuario
     (id_usuario, cpf, nome, area_de_pesquisa, instituicao, data_de_nascimento, login, senha)
 VALUES(10, '04409990903', 'Renan Souza', 'Computação', 'Unesp', '1963-11-25', 'renan_souza', '123');
+
+
+-- ///////////////////////////////////////////////////////////////////////////
+-- table SERVICO 
+INSERT INTO public.servico
+    (id_servico, nome, classe)
+VALUES(1, 'Visualizar', 'visualização');
+
+INSERT INTO public.servico
+    (id_servico, nome, classe)
+VALUES(2, 'Inserir', 'inserção');
+
+INSERT INTO public.servico
+    (id_servico, nome, classe)
+VALUES(3, 'Alterar', 'alteração');
+
+INSERT INTO public.servico
+    (id_servico, nome, classe)
+VALUES(4, 'Remover', 'remoção');
+
+-- ///////////////////////////////////////////////////////////////////////////
+-- table GERENCIA 
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 1);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 2);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 3);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 4);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 5);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 6);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 7);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(1, 8);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 1);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 2);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 3);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 4);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 5);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 6);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 7);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(2, 8);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 1);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 2);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 3);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 4);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 5);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 6);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 7);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(3, 8);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 1);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 2);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 3);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 4);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 5);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 6);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 7);
+
+INSERT INTO public.gerencia
+    (id_servico, id_exame)
+VALUES(4, 8);
+
+-- ///////////////////////////////////////////////////////////////////////////
+-- table pertence
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(1, 4);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(2, 4);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(3, 4);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(4, 4);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(1, 2);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(1, 3);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(2, 3);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(1, 1);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(2, 1);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(3, 1);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(4, 1);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(1, 5);
+
+INSERT INTO public.pertence
+    (id_servico, id_perfil)
+VALUES(1, 6);

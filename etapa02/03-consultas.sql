@@ -8,7 +8,7 @@ WHERE exame.id_exame = realiza.id_exame AND paciente.id_paciente = realiza.id_pa
 -- data de solicitação).
 SELECT *
 FROM public.realiza
-ORDER BY data_de_realizacao - data_de_solicitacao ASC LIMIT 5
+ORDER BY data_de_realizacao - data_de_solicitacao ASC LIMIT 5;
 
 --4.3) Liste os serviços que podem ser utilizados pelos os usuários
 SELECT usuario.id_usuario, login, codigo, tipo, servico.nome

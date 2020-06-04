@@ -111,26 +111,3 @@ CREATE TABLE requisita
     id_servico INT NOT NULL references servico(id_servico),
     data_de_requisicao TIMESTAMP
 );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

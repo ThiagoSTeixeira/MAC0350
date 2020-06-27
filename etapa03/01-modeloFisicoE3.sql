@@ -6,7 +6,7 @@ CREATE TABLE pessoa
     endereco VARCHAR(255) NOT NULL,
     data_de_nascimento DATE,
     UNIQUE(cpf)
-)
+);
 
 CREATE TABLE usuario
 (

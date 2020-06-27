@@ -1,83 +1,83 @@
 -- ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 -- table pessoa
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(1, '62961657903', 'José Alves', 'Rua Benedito Julião Machado 1087', '1996-06-26');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(2, '84825497829', 'Manuela Correia', 'Rua Irmã Teresilda Steffen 1165', '2003-05-27');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(3, '91608987558', 'Felipe Fernandes', 'Rua Marcos Evangelista Vilela 1258', '1996-11-04');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(4, '51399325205', 'Erick Rodrigues', 'Rua Irmã Teresilda Steffen 1165', '1920-03-03');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(5, '69559704370', 'Camila Ribeiro', 'Rua Juvêncio de Menezes 1518', '2018-01-20');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(6, '11327890950', 'Thaís Oliveira', 'Avenida Porto Alegre 1475', '1990-03-30');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(7, '12099398780', 'Vitor Goncalves', 'Quadra QNN 36 Conjunto A 994', '1997-01-30');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(8, '25666266268', 'Gabriel Carvalho', 'Rua Doutor Cecílio Monza 1903', '1949-04-03');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(9, '86011419275', 'Ryan Rodrigues', 'Rua Junqueirópolis 1033', '1946-08-25');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(10, '43356416723', 'Nicole Gomes', 'Avenida Farias 249', '1974-10-06');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(11, '01234567890', 'João Pereira', 'Rua Tapejara 254', '2000-01-01');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(12, '73861875136', 'Erick Gomes', 'Rua Big Bar 2616', '1914-07-14');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(13, '31097899258', 'Gabrielle Souza', 'Rua D 570', '1941-09-12');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(14, '21583710510', 'Rita Fisher', 'Rua Jonida Ribeiro 684', '1945-09-04');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(15, '45481536602', 'Bruno Castro', 'Rua Tarcísio Antônio da Luz 616', '1952-04-17');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(16, '14285286480', 'Guilherme Ribeiro', 'Rua Doze 78', '1934-06-05');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(17, '19408236049', 'Julian Rocha', 'Rua Comandante Hoover 210', '1985-08-03');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(18, '90386479495', 'Nicole Almeida', 'Rua Projetada I 69', '1938-08-28');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(19, '67538866438', 'Rene Bishop', 'Rua Governador Raimundo Artur de Vasconcelos 64', '1936-06-26');
 
 INSERT INTO public.pessoa
-    (id_pessoa, cpf, nome, endereco, nascimento)
+    (id_pessoa, cpf, nome, endereco, data_de_nascimento)
 VALUES(20, '04409990903', 'Renan Souza', 'Rua Vale do Anari 76', '1963-11-25');
 
 -- ///////////////////////////////////////////////////////////////////////////////////////////////////////////

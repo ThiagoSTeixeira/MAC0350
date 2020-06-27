@@ -3,8 +3,8 @@ CREATE TABLE pessoa
     id_pessoa INT NOT NULL PRIMARY KEY,
     cpf CHAR(11) NOT NULL,
     nome VARCHAR(255) NOT NULL,
-    data_de_nascimento DATE,
     endereco VARCHAR(255) NOT NULL,
+    data_de_nascimento DATE,
     UNIQUE(cpf)
 )
 
@@ -68,6 +68,7 @@ CREATE TABLE paciente
 (
     id_paciente INT NOT NULL PRIMARY KEY,
     id_pessoa INT NOT NULL references pessoa(id_pessoa),
+    UNIQUE(id_pessoa)
 );
 
 CREATE TABLE exame

@@ -5,13 +5,17 @@ from django.http import HttpResponse
 from django.db import connection
 from collections import namedtuple
 from django.template import loader
-
+                        
 def index(request):
     return HttpResponse("MAC0350/2020: Data Management Example")
 
 def query1(request):
     with connection.cursor() as cursor:
-        cursor.execute('SELECT * FROM example_usuario')
+        cursor.execute('\
+                SELECT exame.tipo, COUNT(*) totalCount\
+                FROM public.realiza, public.exame\
+                WHERE realiza.id_exame = exame.id_exame\
+                GROUP BY exame.tipo;')
         result = named_tuple_fetchall(cursor)
     
     template = loader.get_template('example/query1.html')
@@ -22,20 +26,15 @@ def query1(request):
 def query2(request):
     with connection.cursor() as cursor:
         cursor.execute('\
-                SELECT u.nome, u.login, u.cpf, string_agg(p.tipo, \', \') as perfis FROM example_usuario as u\
-                LEFT JOIN example_usuario_possui_perfil as possui\
-                ON u.id = possui.usuario_id\
-                JOIN example_perfil as p\
-                ON possui.perfil_id = p.id\
-                GROUP BY u.nome, u.login, u.cpf\
-                ')
+                SELECT *\
+                FROM public.realiza\
+                ORDER BY data_de_solicitacao DESC LIMIT 10;')
         result = named_tuple_fetchall(cursor)
     print(result)
     template = loader.get_template('example/query2.html')
     context = {'query2_result_list': result,}
     
     return HttpResponse(template.render(context, request))
-#metodos auxiliares
 
 def named_tuple_fetchall(cursor):
     desc = cursor.description
